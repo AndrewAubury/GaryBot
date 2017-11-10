@@ -1,11 +1,16 @@
 package me.piggypiglet.gary.commands;
 
-import net.dv8tion.jda.core.entities.TextChannel;
+import me.piggypiglet.gary.Command;
+import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 import java.util.stream.Stream;
 
-public class Help {
-    public Help(TextChannel channel) {
+public class Help extends Command {
+    public Help() {
+        this.cmd = "?help";
+    }
+
+    public void execute(MessageReceivedEvent e, String[] args) {
         Stream.of(
                 "**Help**",
                 "!text - Talk to Garys AI",
@@ -13,7 +18,6 @@ public class Help {
                 "?joinnsfw - Join the NSFW Channel",
                 "?leavensfw - Leave the NSFW Channel",
                 "?request - Start a request"
-        ).forEach(msg -> channel.sendMessage(msg).queue());
-        boolean arg = false;
+        ).forEach(msg -> e.getTextChannel().sendMessage(msg).queue());
     }
 }
