@@ -2,7 +2,6 @@ package me.piggypiglet.gary;
 
 import me.piggypiglet.gary.handlers.CommandHandler;
 import net.dv8tion.jda.core.AccountType;
-import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.entities.Game;
 import net.dv8tion.jda.core.exceptions.RateLimitedException;
@@ -12,7 +11,7 @@ import javax.security.auth.login.LoginException;
 
 public class Gary {
     public static void main(String[] args) throws LoginException, RateLimitedException, InterruptedException {
-        JDA jda = new JDABuilder(AccountType.BOT)
+        new JDABuilder(AccountType.BOT)
                 .setToken("diabetes type 3")
                 .addEventListener(new CommandHandler())
                 .setGame(Game.of("https://garys.life"))
