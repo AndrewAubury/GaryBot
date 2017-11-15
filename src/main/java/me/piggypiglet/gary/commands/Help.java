@@ -9,6 +9,6 @@ public class Help extends Command {
     }
 
     public void execute(MessageReceivedEvent e, String[] args) {
-        e.getTextChannel().sendMessage("**Help**\n?help - This menu\n?joinnsfw - Join the NSFW channel\n?leavensfw - Leave the NSFW channel\n?request - Start a request").queue();
+        e.getChannel().sendMessage("**Help**\n?help - This menu\n?joinnsfw - Join the NSFW channel\n?leavensfw - Leave the NSFW channel\n?request - Start a request").queue();
     }
 }

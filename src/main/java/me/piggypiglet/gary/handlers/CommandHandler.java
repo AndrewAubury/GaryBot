@@ -4,6 +4,7 @@ import me.piggypiglet.gary.Command;
 import me.piggypiglet.gary.commands.Help;
 import me.piggypiglet.gary.commands.Info;
 import me.piggypiglet.gary.commands.NSFW;
+import me.piggypiglet.gary.commands.Request;
 import me.piggypiglet.gary.commands.voice.*;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
@@ -19,7 +20,8 @@ public class CommandHandler extends ListenerAdapter {
                 new Four(),
                 new Five(),
                 new NSFW(),
-                new Info()
+                new Info(),
+                new Request()
         };
     }
 

@@ -1,5 +1,5 @@
 .idea/
-main/test
+src/main/test
 GaryBot.iml
 Gary.iml
 target/

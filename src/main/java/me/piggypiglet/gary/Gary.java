@@ -12,7 +12,7 @@ import javax.security.auth.login.LoginException;
 public class Gary {
     public static void main(String[] args) throws LoginException, RateLimitedException, InterruptedException {
         new JDABuilder(AccountType.BOT)
-                .setToken("diabetes type 3")
+                .setToken("lelerino")
                 .addEventListener(new CommandHandler())
                 .setGame(Game.of("https://garys.life"))
                 .buildBlocking();

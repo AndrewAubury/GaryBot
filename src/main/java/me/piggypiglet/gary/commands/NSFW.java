@@ -9,6 +9,6 @@ public class NSFW extends Command {
     }
 
     public void execute(MessageReceivedEvent e, String[] args) {
-        e.getTextChannel().sendMessage("The NSFW channel no longer exists, please join https://discord.gg/U4GJdDj for your NSFW needs.").queue();
+        e.getChannel().sendMessage("The NSFW channel no longer exists, please join https://discord.gg/U4GJdDj for your NSFW needs.").queue();
     }
 }
