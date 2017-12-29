@@ -29,6 +29,6 @@ public class Request extends Command {
                 "Welcome to the request system, during this process, you will give me information needed in your request such as whether it's paid or unpaid, service required, a description, and an optional budget.",
                 "Before we can start, you must agree to the rules:"
         ).forEach(msg -> e.getChannel().sendMessage(msg).queue());
-        e.getChannel().sendMessage("```" + )
+       // e.getChannel().sendMessage("```" + );
     }
 }
